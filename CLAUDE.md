@@ -9,3 +9,17 @@ This repo's `.claude/settings.json` sets the model to `opusplan`: Opus while in 
 - **Opus** (`/model opus`, or plan mode under `opusplan`): architecture, tricky multi-file changes, hard bugs that Sonnet couldn't crack.
 
 When delegating to a subagent, keep it on Haiku for searching and reading. Pass `sonnet` or `opus` only when the subagent has to write or reason about non-trivial code.
+
+## Agent skills
+
+### Issue tracker
+
+Issues are tracked in this repo's GitHub Issues. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Uses the five default labels: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: one `CONTEXT.md` and `docs/adr/` at the repo root. See `docs/agents/domain.md`.
